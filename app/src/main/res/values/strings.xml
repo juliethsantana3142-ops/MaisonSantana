@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Maison Santana</string>
+
+    <string name="app_logo">MAISON\nSANTANA</string>
+    <string name="app_slogan">Moda Femenina &amp; Estilo</string>
+    <string name="label_email">EMAIL</string>
+    <string name="label_password">PASSWORD</string>
+    <string name="hint_email">hello@reallygreatsite.com</string>
+    <string name="hint_password">*****</string>
+    <string name="btn_sign_in">Sign in</string>
+    <string name="btn_register">Register</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+</resources>
