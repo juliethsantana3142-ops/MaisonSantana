@@ -36,6 +36,10 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Contraseña incorrecta", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+            if (prefs.getString("estado_$correo", "Activo") == "Inactivo") {
+                Toast.makeText(this, "Tu cuenta está inactiva", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
 
             val destino = when (prefs.getString("rol_$correo", "Comprador")) {
                 "Administrador" -> AdminActivity::class.java
