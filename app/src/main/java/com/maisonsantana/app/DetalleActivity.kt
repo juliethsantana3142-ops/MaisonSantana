@@ -27,8 +27,7 @@ class DetalleActivity : AppCompatActivity() {
 
         val tvCantidad = findViewById<TextView>(R.id.tvCantidad)
         findViewById<TextView>(R.id.tvNombre).text = nombre
-        findViewById<TextView>(R.id.tvPrecio).text =
-            "$" + String.format("%,d", precio) + " COP"
+        findViewById<TextView>(R.id.tvPrecio).text = "$" + String.format("%,d", precio) + " COP"
 
         findViewById<TextView>(R.id.btnVolver).setOnClickListener { finish() }
 
@@ -59,7 +58,7 @@ class DetalleActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.navHome).setOnClickListener { finish() }
         findViewById<TextView>(R.id.navSearch).setOnClickListener { finish() }
         findViewById<TextView>(R.id.navCart).setOnClickListener {
-            Toast.makeText(this, "Elige una talla y pulsa Agregar al carrito", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Elige una talla y pulsa Agregar", Toast.LENGTH_SHORT).show()
         }
         findViewById<TextView>(R.id.navProfile).setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))

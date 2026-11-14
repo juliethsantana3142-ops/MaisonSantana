@@ -20,11 +20,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/inria_serif_bold"
                 android:text="Gestión De Productos"
                 android:textColor="@color/gold"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:textSize="22sp" />
 
             <Button
                 android:id="@+id/btnNuevo"
@@ -33,28 +32,27 @@
                 android:layout_marginTop="12dp"
                 android:background="@drawable/bg_pill_gold"
                 android:backgroundTint="@null"
+                android:fontFamily="@font/bree_serif"
                 android:paddingStart="24dp"
                 android:paddingEnd="24dp"
                 android:stateListAnimator="@null"
                 android:text="+ Nuevo"
                 android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/inria_serif_bold"
                 android:text="Vestido Seda Gala"
-                android:textColor="@color/text_brown"
-                android:textStyle="bold" />
+                android:textColor="@color/text_brown" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/inria_serif_regular"
                 android:text="Tallas: XS (3), M (5), L (0)\nPrecio: $180.000 COP | Estado: Activo"
                 android:textColor="@color/text_brown"
                 android:textSize="12sp" />
@@ -71,13 +69,13 @@
                     android:layout_marginEnd="10dp"
                     android:background="@drawable/bg_pill_gold"
                     android:backgroundTint="@null"
+                    android:fontFamily="@font/bree_serif"
                     android:paddingStart="22dp"
                     android:paddingEnd="22dp"
                     android:stateListAnimator="@null"
                     android:text="Editar"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
+                    android:textColor="@color/white" />
 
                 <Button
                     android:id="@+id/btnFoto1"
@@ -85,29 +83,28 @@
                     android:layout_height="48dp"
                     android:background="@drawable/bg_pill_gold"
                     android:backgroundTint="@null"
+                    android:fontFamily="@font/bree_serif"
                     android:paddingStart="22dp"
                     android:paddingEnd="22dp"
                     android:stateListAnimator="@null"
                     android:text="Tomar Foto"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/inria_serif_bold"
                 android:text="Chaqueta Cuero Sintético"
-                android:textColor="@color/text_brown"
-                android:textStyle="bold" />
+                android:textColor="@color/text_brown" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/inria_serif_regular"
                 android:text="Tallas: XS (1), M (10), L (3)\nPrecio: $220.000 COP | Estado: Activo"
                 android:textColor="@color/text_brown"
                 android:textSize="12sp" />
@@ -124,13 +121,13 @@
                     android:layout_marginEnd="10dp"
                     android:background="@drawable/bg_pill_gold"
                     android:backgroundTint="@null"
+                    android:fontFamily="@font/bree_serif"
                     android:paddingStart="22dp"
                     android:paddingEnd="22dp"
                     android:stateListAnimator="@null"
                     android:text="Editar"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
+                    android:textColor="@color/white" />
 
                 <Button
                     android:id="@+id/btnFoto2"
@@ -138,13 +135,13 @@
                     android:layout_height="48dp"
                     android:background="@drawable/bg_pill_gold"
                     android:backgroundTint="@null"
+                    android:fontFamily="@font/bree_serif"
                     android:paddingStart="22dp"
                     android:paddingEnd="22dp"
                     android:stateListAnimator="@null"
                     android:text="Tomar Foto"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -165,7 +162,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/inria_serif_regular"
                     android:text="Falda Corta Efecto Cuero Maison Ivory\nTallas: XS (20), M (10), L (5)\nPrecio: $48.000 COP\nEstado: Activo"
                     android:textColor="@color/text_brown"
                     android:textSize="12sp" />

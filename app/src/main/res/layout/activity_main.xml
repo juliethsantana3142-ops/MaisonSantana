@@ -12,38 +12,43 @@
         android:paddingStart="30dp"
         android:paddingEnd="30dp">
 
-        <!-- LOGO -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="65dp"
-            android:fontFamily="serif"
-            android:gravity="center"
-            android:lineSpacingExtra="-4dp"
-            android:text="@string/app_logo"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/great_vibes"
+            android:text="Maison"
             android:textColor="@color/gold"
-            android:textSize="21sp"
-            android:textStyle="bold" />
+            android:textSize="48sp" />
 
-        <!-- ESLOGAN -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="-6dp"
+            android:fontFamily="@font/inria_serif_regular"
+            android:letterSpacing="0.1"
+            android:text="SANTANA"
+            android:textColor="@color/gold"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp"
             android:layout_marginBottom="38dp"
-            android:fontFamily="serif"
+            android:fontFamily="@font/inria_serif_regular"
             android:text="@string/app_slogan"
             android:textColor="@color/text_slogan"
             android:textSize="13sp" />
 
-        <!-- EMAIL -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:fontFamily="serif"
+            android:fontFamily="@font/inria_serif_regular"
             android:letterSpacing="0.15"
             android:text="@string/label_email"
             android:textColor="@color/text_muted"
@@ -55,6 +60,7 @@
             android:layout_height="48dp"
             android:autofillHints="emailAddress"
             android:background="@drawable/bg_input"
+            android:fontFamily="@font/inria_serif_regular"
             android:hint="@string/hint_email"
             android:inputType="textEmailAddress"
             android:paddingStart="16dp"
@@ -64,13 +70,12 @@
             android:textColorHint="@color/text_muted"
             android:textSize="12sp" />
 
-        <!-- PASSWORD -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="22dp"
             android:layout_marginBottom="12dp"
-            android:fontFamily="serif"
+            android:fontFamily="@font/inria_serif_regular"
             android:letterSpacing="0.15"
             android:text="@string/label_password"
             android:textColor="@color/text_muted"
@@ -82,6 +87,7 @@
             android:layout_height="48dp"
             android:autofillHints="password"
             android:background="@drawable/bg_input"
+            android:fontFamily="@font/inria_serif_regular"
             android:hint="@string/hint_password"
             android:inputType="textPassword"
             android:paddingStart="16dp"
@@ -91,7 +97,6 @@
             android:textColorHint="@color/text_muted"
             android:textSize="12sp" />
 
-        <!-- SIGN IN -->
         <Button
             android:id="@+id/btnIngresar"
             android:layout_width="match_parent"
@@ -99,14 +104,13 @@
             android:layout_marginTop="40dp"
             android:background="@drawable/bg_button_gold"
             android:backgroundTint="@null"
-            android:fontFamily="serif"
+            android:fontFamily="@font/bree_serif"
+            android:stateListAnimator="@null"
             android:text="@string/btn_sign_in"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textSize="14sp" />
 
-        <!-- REGISTER -->
         <Button
             android:id="@+id/btnRegistro"
             android:layout_width="match_parent"
@@ -114,13 +118,13 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/bg_button_gray"
             android:backgroundTint="@null"
-            android:fontFamily="serif"
+            android:fontFamily="@font/bree_serif"
+            android:stateListAnimator="@null"
             android:text="@string/btn_register"
             android:textAllCaps="false"
             android:textColor="@color/text_muted"
             android:textSize="12sp" />
 
-        <!-- OLVIDASTE CONTRASEÑA -->
         <TextView
             android:id="@+id/tvRecuperar"
             android:layout_width="wrap_content"
@@ -128,7 +132,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="30dp"
-            android:fontFamily="serif"
+            android:fontFamily="@font/inria_serif_regular"
             android:gravity="center"
             android:minHeight="48dp"
             android:text="@string/forgot_password"
@@ -137,4 +141,3 @@
 
     </LinearLayout>
 </ScrollView>
-

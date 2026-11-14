@@ -9,15 +9,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:fontFamily="serif"
+        android:fontFamily="@font/inria_serif_bold"
         android:textColor="@color/text_brown"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/tvUsuarioCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/inria_serif_regular"
         android:textColor="@color/text_muted"
         android:textSize="12sp" />
 
@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="70dp"
             android:layout_height="wrap_content"
-            android:fontFamily="serif"
+            android:fontFamily="@font/inria_serif_regular"
             android:text="Rol:"
             android:textColor="@color/text_brown" />
 
@@ -52,7 +52,7 @@
         <TextView
             android:layout_width="70dp"
             android:layout_height="wrap_content"
-            android:fontFamily="serif"
+            android:fontFamily="@font/inria_serif_regular"
             android:text="Estado:"
             android:textColor="@color/text_brown" />
 
@@ -72,11 +72,11 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_pill_gold"
         android:backgroundTint="@null"
+        android:fontFamily="@font/bree_serif"
         android:paddingStart="22dp"
         android:paddingEnd="22dp"
         android:stateListAnimator="@null"
         android:text="Modificar permisos"
         android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
+        android:textColor="@color/white" />
 </LinearLayout>
