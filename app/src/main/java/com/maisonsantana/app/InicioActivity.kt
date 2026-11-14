@@ -2,6 +2,7 @@ package com.maisonsantana.app
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -16,15 +17,9 @@ class InicioActivity : AppCompatActivity() {
             mostrar("Nueva colección próximamente")
         }
 
-        findViewById<android.view.View>(R.id.card1).setOnClickListener {
-            mostrar("Detalle del producto próximamente")
-        }
-        findViewById<android.view.View>(R.id.card2).setOnClickListener {
-            mostrar("Detalle del producto próximamente")
-        }
-        findViewById<android.view.View>(R.id.card3).setOnClickListener {
-            mostrar("Detalle del producto próximamente")
-        }
+        abrirDetalle(R.id.card1, "Body Satinado de Tirantes con Perlas Maison Pearl", 48000)
+        abrirDetalle(R.id.card2, "Vestido Corto Strapless Vino", 180000)
+        abrirDetalle(R.id.card3, "Vestido Negro Asimétrico", 220000)
 
         findViewById<TextView>(R.id.navHome).setOnClickListener {
             mostrar("Favoritos próximamente")
@@ -38,6 +33,15 @@ class InicioActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.navProfile).setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
+        }
+    }
+
+    private fun abrirDetalle(id: Int, nombre: String, precio: Int) {
+        findViewById<View>(id).setOnClickListener {
+            val intent = Intent(this, DetalleActivity::class.java)
+            intent.putExtra("nombre", nombre)
+            intent.putExtra("precio", precio)
+            startActivity(intent)
         }
     }
 

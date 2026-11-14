@@ -24,6 +24,7 @@
 
         <activity android:name=".RegistroActivity" android:exported="false" />
         <activity android:name=".InicioActivity" android:exported="false" />
+        <activity android:name=".DetalleActivity" android:exported="false" />
         <activity android:name=".VendedorActivity" android:exported="false" />
         <activity android:name=".AdminActivity" android:exported="false" />
 

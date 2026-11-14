@@ -28,70 +28,64 @@
                 android:textSize="21sp"
                 android:textStyle="bold" />
 
-            <HorizontalScrollView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/gold"
-                android:scrollbars="none">
+                android:orientation="horizontal"
+                android:padding="8dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_chip"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Blusas"
+                    android:textColor="@color/gold"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginEnd="8dp"
-                        android:background="@drawable/bg_chip"
-                        android:fontFamily="serif"
-                        android:gravity="center"
-                        android:paddingStart="18dp"
-                        android:paddingEnd="18dp"
-                        android:text="Blusas"
-                        android:textColor="@color/gold"
-                        android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_chip"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Pantalones"
+                    android:textColor="@color/gold"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginEnd="8dp"
-                        android:background="@drawable/bg_chip"
-                        android:fontFamily="serif"
-                        android:gravity="center"
-                        android:paddingStart="18dp"
-                        android:paddingEnd="18dp"
-                        android:text="Pantalones"
-                        android:textColor="@color/gold"
-                        android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_chip"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Vestidos"
+                    android:textColor="@color/gold"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginEnd="8dp"
-                        android:background="@drawable/bg_chip"
-                        android:fontFamily="serif"
-                        android:gravity="center"
-                        android:paddingStart="18dp"
-                        android:paddingEnd="18dp"
-                        android:text="Vestidos"
-                        android:textColor="@color/gold"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:background="@drawable/bg_chip"
-                        android:fontFamily="serif"
-                        android:gravity="center"
-                        android:paddingStart="18dp"
-                        android:paddingEnd="18dp"
-                        android:text="Conjuntos"
-                        android:textColor="@color/gold"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </HorizontalScrollView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_chip"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Conjuntos"
+                    android:textColor="@color/gold"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
