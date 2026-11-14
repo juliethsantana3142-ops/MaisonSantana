@@ -112,6 +112,20 @@
             android:textSize="14sp" />
 
         <Button
+            android:id="@+id/btnHuella"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_pill_gold"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/bree_serif"
+            android:stateListAnimator="@null"
+            android:text="Entrar con huella"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <Button
             android:id="@+id/btnRegistro"
             android:layout_width="match_parent"
             android:layout_height="48dp"
