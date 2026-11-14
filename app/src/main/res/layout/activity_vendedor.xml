@@ -3,26 +3,224 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Pantalla de Vendedor"
-        android:textColor="@color/gold"
-        android:textSize="22sp"
-        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-    <Button
-        android:id="@+id/btnSalirVendedor"
-        android:layout_width="200dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/bg_button_gray"
-        android:backgroundTint="@null"
-        android:text="Cerrar sesión"
-        android:textAllCaps="false"
-        android:textColor="@color/text_dark" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="serif"
+                android:text="Gestión De Productos"
+                android:textColor="@color/gold"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnNuevo"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_pill_gold"
+                android:backgroundTint="@null"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:stateListAnimator="@null"
+                android:text="+ Nuevo"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="serif"
+                android:text="Vestido Seda Gala"
+                android:textColor="@color/text_brown"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="serif"
+                android:text="Tallas: XS (3), M (5), L (0)\nPrecio: $180.000 COP | Estado: Activo"
+                android:textColor="@color/text_brown"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEditar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_pill_gold"
+                    android:backgroundTint="@null"
+                    android:paddingStart="22dp"
+                    android:paddingEnd="22dp"
+                    android:stateListAnimator="@null"
+                    android:text="Editar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnFoto1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_pill_gold"
+                    android:backgroundTint="@null"
+                    android:paddingStart="22dp"
+                    android:paddingEnd="22dp"
+                    android:stateListAnimator="@null"
+                    android:text="Tomar Foto"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="serif"
+                android:text="Chaqueta Cuero Sintético"
+                android:textColor="@color/text_brown"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="serif"
+                android:text="Tallas: XS (1), M (10), L (3)\nPrecio: $220.000 COP | Estado: Activo"
+                android:textColor="@color/text_brown"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEditar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_pill_gold"
+                    android:backgroundTint="@null"
+                    android:paddingStart="22dp"
+                    android:paddingEnd="22dp"
+                    android:stateListAnimator="@null"
+                    android:text="Editar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnFoto2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_pill_gold"
+                    android:backgroundTint="@null"
+                    android:paddingStart="22dp"
+                    android:paddingEnd="22dp"
+                    android:stateListAnimator="@null"
+                    android:text="Tomar Foto"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgFalda"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg_foto"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="serif"
+                    android:text="Falda Corta Efecto Cuero Maison Ivory\nTallas: XS (20), M (10), L (5)\nPrecio: $48.000 COP\nEstado: Activo"
+                    android:textColor="@color/text_brown"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bar_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/navPerfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="👤"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/navInventario"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="📦"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/navReportes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="📊"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/navPedidos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="🚚"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/navBuscar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="🔍"
+            android:textSize="22sp" />
+    </LinearLayout>
 </LinearLayout>
