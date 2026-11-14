@@ -3,6 +3,7 @@ package com.maisonsantana.app
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
@@ -18,6 +19,11 @@ class DetalleActivity : AppCompatActivity() {
 
         val nombre = intent.getStringExtra("nombre") ?: "Producto"
         val precio = intent.getIntExtra("precio", 0)
+        val foto = intent.getIntExtra("foto", 0)
+
+        if (foto != 0) {
+            findViewById<ImageView>(R.id.imgDetalle).setImageResource(foto)
+        }
 
         val tvCantidad = findViewById<TextView>(R.id.tvCantidad)
         findViewById<TextView>(R.id.tvNombre).text = nombre

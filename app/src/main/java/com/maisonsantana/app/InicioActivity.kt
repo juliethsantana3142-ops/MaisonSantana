@@ -17,9 +17,9 @@ class InicioActivity : AppCompatActivity() {
             mostrar("Nueva colección próximamente")
         }
 
-        abrirDetalle(R.id.card1, "Body Satinado de Tirantes con Perlas Maison Pearl", 48000)
-        abrirDetalle(R.id.card2, "Vestido Corto Strapless Vino", 180000)
-        abrirDetalle(R.id.card3, "Vestido Negro Asimétrico", 220000)
+        abrirDetalle(R.id.card1, "Body Satinado de Tirantes con Perlas Maison Pearl", 48000, R.drawable.body_perlas)
+        abrirDetalle(R.id.card2, "Vestido Corto Strapless Vino", 180000, R.drawable.vestido_vino)
+        abrirDetalle(R.id.card3, "Vestido Negro Asimétrico", 220000, R.drawable.vestido_negro)
 
         findViewById<TextView>(R.id.navHome).setOnClickListener {
             mostrar("Favoritos próximamente")
@@ -36,11 +36,12 @@ class InicioActivity : AppCompatActivity() {
         }
     }
 
-    private fun abrirDetalle(id: Int, nombre: String, precio: Int) {
+    private fun abrirDetalle(id: Int, nombre: String, precio: Int, foto: Int) {
         findViewById<View>(id).setOnClickListener {
             val intent = Intent(this, DetalleActivity::class.java)
             intent.putExtra("nombre", nombre)
             intent.putExtra("precio", precio)
+            intent.putExtra("foto", foto)
             startActivity(intent)
         }
     }
