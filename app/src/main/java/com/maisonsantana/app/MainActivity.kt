@@ -41,6 +41,9 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            getSharedPreferences("sesion", Context.MODE_PRIVATE)
+                .edit().putString("correo", correo).apply()
+
             val destino = when (prefs.getString("rol_$correo", "Comprador")) {
                 "Administrador" -> AdminActivity::class.java
                 "Vendedor" -> VendedorActivity::class.java
@@ -55,7 +58,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.tvRecuperar).setOnClickListener {
-            Toast.makeText(this, "Abriendo recuperar...", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this, RecuperarActivity::class.java))
         }
     }

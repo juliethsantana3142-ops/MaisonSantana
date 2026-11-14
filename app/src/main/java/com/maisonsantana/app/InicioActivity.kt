@@ -38,8 +38,7 @@ class InicioActivity : AppCompatActivity() {
             startActivity(Intent(this, CarritoActivity::class.java))
         }
         findViewById<TextView>(R.id.navProfile).setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
+            startActivity(Intent(this, PerfilActivity::class.java))
         }
     }
 
