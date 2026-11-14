@@ -9,4 +9,7 @@
     <color name="text_slogan">#A69B8C</color>
     <color name="text_dark">#333333</color>
     <color name="link_blue">#4A6FA5</color>
+    <color name="bar_gray">#EBEBEB</color>
+    <color name="text_brown">#6B6B6B</color>
+    <color name="photo_placeholder">#D9D2C3</color>
 </resources>

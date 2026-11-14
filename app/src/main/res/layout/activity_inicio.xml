@@ -3,15 +3,314 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Pantalla de Inicio"
-        android:textColor="@color/gold"
-        android:textSize="22sp"
-        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:lineSpacingExtra="-4dp"
+                android:paddingTop="40dp"
+                android:paddingBottom="16dp"
+                android:text="@string/app_logo"
+                android:textColor="@color/gold"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gold"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_chip"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
+                        android:text="Blusas"
+                        android:textColor="@color/gold"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_chip"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
+                        android:text="Pantalones"
+                        android:textColor="@color/gold"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_chip"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
+                        android:text="Vestidos"
+                        android:textColor="@color/gold"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_chip"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
+                        android:text="Conjuntos"
+                        android:textColor="@color/gold"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+                android:text="PROMO DESTACADA"
+                android:textColor="@color/gold"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPromo1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_foto"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/imgPromo2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_foto"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="serif"
+                android:text="Colección Primavera / VERANO 2026"
+                android:textColor="@color/gold"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnNuevaColeccion"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_pill_gold"
+                android:backgroundTint="@null"
+                android:fontFamily="serif"
+                android:stateListAnimator="@null"
+                android:text="Ver nueva colección"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="serif"
+                android:text="Productos Destacados:"
+                android:textColor="@color/gold"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:id="@+id/card1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgProd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:background="@drawable/bg_foto"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Body Satinado de Tirantes con Perlas"
+                        android:textColor="@color/text_brown"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="$48.000 COP"
+                        android:textColor="@color/gold"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgProd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:background="@drawable/bg_foto"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Vestido Corto Strapless Vino"
+                        android:textColor="@color/text_brown"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="$180.000 COP"
+                        android:textColor="@color/gold"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgProd3"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:background="@drawable/bg_foto"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Vestido Negro Asimétrico"
+                        android:textColor="@color/text_brown"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="$220.000 COP"
+                        android:textColor="@color/gold"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bar_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="♡"
+            android:textColor="@color/text_dark"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/navSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="🔍"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/navCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="🛒"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="👤"
+            android:textSize="22sp" />
+    </LinearLayout>
 </LinearLayout>
