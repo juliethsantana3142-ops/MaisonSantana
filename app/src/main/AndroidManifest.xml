@@ -27,6 +27,7 @@
         <activity android:name=".RecuperarActivity" android:exported="false" />
         <activity android:name=".InicioActivity" android:exported="false" />
         <activity android:name=".DetalleActivity" android:exported="false" />
+        <activity android:name=".CarritoActivity" android:exported="false" />
         <activity android:name=".PagoActivity" android:exported="false" />
         <activity android:name=".VendedorActivity" android:exported="false" />
         <activity android:name=".AdminActivity" android:exported="false" />

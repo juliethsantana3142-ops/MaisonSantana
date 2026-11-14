@@ -13,10 +13,8 @@ class InicioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
-
         abrirDetalle(R.id.imgPromo1, "Conjunto Blanco Primavera - Top Halter y Falda Volantes", 120000, R.drawable.promo_1)
         abrirDetalle(R.id.imgPromo2, "Conjunto Blanco Primavera - Vista Espalda", 120000, R.drawable.promo2)
-
 
         findViewById<Button>(R.id.btnNuevaColeccion).setOnClickListener {
             val intent = Intent(this, DetalleActivity::class.java)
@@ -31,13 +29,13 @@ class InicioActivity : AppCompatActivity() {
         abrirDetalle(R.id.card3, "Vestido Negro Asimétrico", 220000, R.drawable.vestido_negro)
 
         findViewById<TextView>(R.id.navHome).setOnClickListener {
-            mostrar("Favoritos próximamente")
+            Toast.makeText(this, "Favoritos próximamente", Toast.LENGTH_SHORT).show()
         }
         findViewById<TextView>(R.id.navSearch).setOnClickListener {
-            mostrar("Búsqueda próximamente")
+            Toast.makeText(this, "Búsqueda próximamente", Toast.LENGTH_SHORT).show()
         }
         findViewById<TextView>(R.id.navCart).setOnClickListener {
-            mostrar("Elige un producto para agregarlo al carrito")
+            startActivity(Intent(this, CarritoActivity::class.java))
         }
         findViewById<TextView>(R.id.navProfile).setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
@@ -53,9 +51,5 @@ class InicioActivity : AppCompatActivity() {
             intent.putExtra("foto", foto)
             startActivity(intent)
         }
-    }
-
-    private fun mostrar(texto: String) {
-        Toast.makeText(this, texto, Toast.LENGTH_SHORT).show()
     }
 }
