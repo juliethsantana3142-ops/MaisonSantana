@@ -1,7 +1,10 @@
 package com.maisonsantana.app
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -33,16 +36,28 @@ class DetalleActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.btnAgregar).setOnClickListener {
-            Toast.makeText(this, "Agregado al carrito", Toast.LENGTH_SHORT).show()
+            val grupo = findViewById<RadioGroup>(R.id.rgTalla)
+            if (grupo.checkedRadioButtonId == -1) {
+                Toast.makeText(this, "Selecciona una talla", Toast.LENGTH_SHORT).show()
+            } else {
+                val talla = findViewById<RadioButton>(grupo.checkedRadioButtonId).text.toString()
+                val i = Intent(this, PagoActivity::class.java)
+                i.putExtra("nombre", nombre)
+                i.putExtra("precio", precio)
+                i.putExtra("cantidad", cantidad)
+                i.putExtra("talla", talla)
+                startActivity(i)
+            }
         }
 
         findViewById<TextView>(R.id.navHome).setOnClickListener { finish() }
         findViewById<TextView>(R.id.navSearch).setOnClickListener { finish() }
         findViewById<TextView>(R.id.navCart).setOnClickListener {
-            Toast.makeText(this, "Carrito próximamente", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Elige una talla y pulsa Agregar al carrito", Toast.LENGTH_SHORT).show()
         }
         findViewById<TextView>(R.id.navProfile).setOnClickListener {
-            Toast.makeText(this, "Perfil próximamente", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, MainActivity::class.java))
+            finishAffinity()
         }
     }
 }
