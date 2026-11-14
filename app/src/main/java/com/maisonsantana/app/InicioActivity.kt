@@ -13,8 +13,17 @@ class InicioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
+
+        abrirDetalle(R.id.imgPromo1, "Conjunto Blanco Primavera - Top Halter y Falda Volantes", 120000, R.drawable.promo_1)
+        abrirDetalle(R.id.imgPromo2, "Conjunto Blanco Primavera - Vista Espalda", 120000, R.drawable.promo2)
+
+
         findViewById<Button>(R.id.btnNuevaColeccion).setOnClickListener {
-            mostrar("Nueva colección próximamente")
+            val intent = Intent(this, DetalleActivity::class.java)
+            intent.putExtra("nombre", "Conjunto Blanco Primavera - Top Halter y Falda Volantes")
+            intent.putExtra("precio", 120000)
+            intent.putExtra("foto", R.drawable.promo_1)
+            startActivity(intent)
         }
 
         abrirDetalle(R.id.card1, "Body Satinado de Tirantes con Perlas Maison Pearl", 48000, R.drawable.body_perlas)
@@ -28,7 +37,7 @@ class InicioActivity : AppCompatActivity() {
             mostrar("Búsqueda próximamente")
         }
         findViewById<TextView>(R.id.navCart).setOnClickListener {
-            mostrar("Carrito próximamente")
+            mostrar("Elige un producto para agregarlo al carrito")
         }
         findViewById<TextView>(R.id.navProfile).setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
