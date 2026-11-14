@@ -53,5 +53,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnRegistro).setOnClickListener {
             startActivity(Intent(this, RegistroActivity::class.java))
         }
+
+        findViewById<Button>(R.id.tvRecuperar).setOnClickListener {
+            Toast.makeText(this, "Abriendo recuperar...", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, RecuperarActivity::class.java))
+        }
     }
 }
