@@ -49,6 +49,22 @@
             android:text="Gestión De Usuarios Y Permisos"
             android:textColor="@color/text_muted" />
 
+        <Button
+            android:id="@+id/btnNuevoUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_pill_gold"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/bree_serif"
+            android:paddingStart="26dp"
+            android:paddingEnd="26dp"
+            android:stateListAnimator="@null"
+            android:text="+ Nuevo usuario"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
         <LinearLayout
             android:id="@+id/contenedorUsuarios"
             android:layout_width="match_parent"
